@@ -20,14 +20,20 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_service" />
+    <include
+        layout="@layout/content_service"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="107dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:backgroundTint="@android:color/background_light"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/balon"
+        tools:layout_width="@dimen/nav_header_height" />
 
 </android.support.design.widget.CoordinatorLayout>

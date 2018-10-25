@@ -1,5 +1,6 @@
 package es.ujaen.labtelema.practica1;
 
+import android.content.Intent;
 import android.os.TokenWatcher;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.View;
 
 import data.UserData;
 
@@ -30,8 +32,7 @@ public class MainActivity extends AppCompatActivity implements FragmentAuth.OnFr
             FragmentAuth fragment = FragmentAuth.newInstance("", "");
             ft.add(R.id.main_container, fragment, "login");
             ft.commit();
-        } else
-            Toast.makeText(this,getString(R.string.mainactivity_fragmentepresent), Toast.LENGTH_SHORT).show();
+        }
 
        if(savedInstanceState!=null){
            String domain = savedInstanceState.getString("domain");
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements FragmentAuth.OnFr
 
         changetitle(ud.getDomain());
     }
+
+
 
     public void changetitle(String title){
         TextView tuser = findViewById(R.id.main_apptitle);

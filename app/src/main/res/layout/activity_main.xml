@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@drawable/wallpaper"
     android:padding="@dimen/main_padding">
+
 
     <TextView
         android:id="@+id/main_apptitle"
@@ -15,8 +17,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+        android:text="My Soccer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <TextView
         android:id="@+id/main_degree"
@@ -24,7 +27,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/main_description"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <FrameLayout
         android:id="@+id/main_container"
